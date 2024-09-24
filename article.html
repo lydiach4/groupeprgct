@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>YOULY airlines</title>
   </head>
   <body class="bg-blue-50">
     <header class="bg-transparent shadow-lg">
@@ -13,28 +13,30 @@
           <img class="w-[120px]" src="youly.png" alt="logo" />
         </div>
         <div>
-          <ul class="flex gap-20 text-2xl text-black">
+          <ul class="lg:flex gap-20 text-2xl text-black hidden ">
             <a href="#"> <li>HOME</li></a>
             <a href="#"> <li>About</li></a>
             <a href="#"> <li>Soluton</li></a>
             <a href="#"> <li>Contact</li></a>
           </ul>
         </div>
-      
+ <div class="lg:hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+</div> 
       </nav>
     </header>
     <main>
-      <div class="px-32 pt-20 ">
+      <div class="px-32 pt-20">
         <img
           src="https://images.unsplash.com/photo-1558204692-5f402fe220b9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          class="h-[500px] w-full relative"
+          class="lg:h-[500px] lg:w-full lg:relative h-full w-full "
         />
 
         <h1 class="text-center pt-10 text-[3rem] pb-6">
           The Impact of AI On Aviation Logistics
         </h1>
-        <div class="flex gap-14 pb-20">
+        <div class="lg:flex  gap-14 pb-20  block ">
           <div class="w-full">
             <p>
               Aviation is a key industry where AI will inevitably improve
@@ -46,7 +48,7 @@
             <h1 class="font-sans pt-4 text-[2.1rem] text-bold">
               Enhancing Efficiency But Not Taking Over
             </h1>
-            <p class="text-xl">
+            <p class="text-xl pb-4 lg:pb-0">
               In a sector as complex and logistically demanding as aviation,
               efficiency is paramount. Any lapses in efficiency will compound
               and may cause significant consequences further down the line.
@@ -78,7 +80,7 @@
       <div
         class="flex text-white bg-cover bg-[url(https://images.unsplash.com/photo-1535156123341-18b2b37d485a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]"
       >
-        <div class="items-center justify-center pt-72 px-64 mb-48">
+        <div class="lg:flex lg:items-center lg:justify-center lg:pt-72 lg:px-64 lg:mb-48 block">
           <h1 class="text-6xl pb-6">About YOULY</h1>
           <p class="text-2xl pb-10">
             No matter where you fly, anywhere in the world, you know you can do
@@ -88,18 +90,18 @@
           </p>
 
           <button
-            class="bg-blue-500 px-6 pt-3 pb-3 rounded-full hover:bg-blue-700 mx-10"
+            class="bg-blue-500 lg:px-6 lg:pt-3 lg:pb-3 lg:rounded-full hover:bg-blue-700 lg:mx-10 px-6 pt-3 pb-3 block mb-5"
           >
             contact us
           </button>
           <button
-            class="bg-blue-500 px-6 pt-3 pb-3 rounded-full hover:bg-blue-700"
+            class="bg-blue-500 lg:px-6 lg:pt-3 lg:pb-3 lg:rounded-full hover:bg-blue-700 px-6 pt-3 pb-3 block mb-5"
           >
             Brochure
           </button>
         </div>
       </div>
-      <div class="px-32 pt-20 flex gap-16">
+      <div class="lg:px-32 lg:pt-20 lg:flex lg:gap-16 block pt-28">
         <div class="w-full">
           <img
             src="https://plus.unsplash.com/premium_photo-1661902317483-7772da4303eb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -132,7 +134,7 @@
           </p>
         </div>
       </div>
-      <div class="px-32 pt-20 grid grid-cols-3 gap-16">
+      <div class="lg:px-32 lg:pt-20 lg:grid lg:grid-cols-3 lg:gap-16  grid grid-cols-1 pt-10 gap-10 ">
         <div class="p-10 hover:bg-blue-300 hover:text-white cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -251,10 +253,12 @@
         </div>
       </div>
     </main>
-    <footer class="flex justify-between mt-20 bg-gray-400  pt-20 px-20 pb-20 w-full h-full">
-      <div class=" gap-4">
+    <footer
+      class="lg:flex lg:justify-between lg:mt-20 bg-gray-400 lg:pt-20 lg:px-20 lg:pb-20 lg:w-full lg:h-full block"
+    >
+      <div class="gap-4">
         <h1 class="text-xl font-serif text-[400]">Platform</h1>
-        <ul class=" justify-between gap-5">
+        <ul class="justify-between gap-5">
           <a href="#" class="underline decoration-solid hover:text-blue-700">
             <li>Pricing</li></a
           >
@@ -276,12 +280,9 @@
         </ul>
       </div>
 
-      
-
-      
-      <div class=" gap-4 pt-6">
+      <div class="gap-4 pt-6">
         <h1 class="text-xl font-serif text-[400]">Compare</h1>
-        <ul class=" justify-between gap-5 ">
+        <ul class="justify-between gap-5">
           <a href="#" class="underline decoration-solid hover:text-blue-700">
             <li>Kajabi</li></a
           >
@@ -292,15 +293,15 @@
             ><li>Thinkific</li></a
           >
           <a href="#" class="underline decoration-solid hover:text-blue-700"
-            ><li>Patreon</li></a
-          >
+            ><li>Patreon</li></a >
          
         </ul>
+
       </div>
 
-      <div class=" gap-4 pt-6">
+      <div class="gap-4 pt-6">
         <h1 class="text-xl font-serif text-[400]">Resources</h1>
-        <ul class=" justify-between gap-5 ">
+        <ul class="justify-between gap-5">
           <a href="#" class="underline decoration-solid hover:text-blue-700">
             <li>Examples</li></a
           >
@@ -308,15 +309,14 @@
             <li>Demo</li></a
           >
           <a href="#" class="underline decoration-solid hover:text-blue-700"
-            ><li>Creator stories</li></a
-          >
+            ><li>Creator stories</li></a>
           
         </ul>
       </div>
 
-      <div class=" gap-4 pt-6">
+      <div class="gap-4 pt-6">
         <h1 class="text-xl font-serif text-[400]">YOULY</h1>
-        <ul class=" justify-between gap-5 ">
+        <ul class="justify-between gap-5">
           <a href="#" class="underline decoration-solid hover:text-blue-700">
             <li>Jobs</li></a
           >
@@ -327,15 +327,14 @@
             ><li>Branding</li></a
           >
           <a href="#" class="underline decoration-solid hover:text-blue-700"
-            ><li>Reviews</li></a
-          >
+            ><li>Reviews</li></a>
           
         </ul>
       </div>
 
-      <div class=" gap-4 pt-6">
+      <div class="gap-4 pt-6">
         <h1 class="text-xl font-serif text-[400]">Social</h1>
-        <ul class=" justify-between gap-5 ">
+        <ul class="justify-between gap-5">
           <a href="#" class="underline decoration-solid hover:text-blue-700">
             <li>Twitter</li></a
           >
@@ -350,9 +349,10 @@
           >
         </ul>
       </div>
-      
+
     </footer>
-
-
+ 
+    
   </body>
+
 </html>
